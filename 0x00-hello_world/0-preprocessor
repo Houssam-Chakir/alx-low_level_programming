@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc main.c -Wall -Werror -Wextra -pedantic -std=gnu89 -o main && ./main > c
+export CFILE=main.c ; gcc main.c -E -Wall -Werror -Wextra -pedantic -std=gnu89 -o main ; ./main > c
