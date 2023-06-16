@@ -5,25 +5,26 @@
  *
  * Description: using a loop to print
  * all alphabets in lower case
+ * except e and q
  * Return: 0 to hand over control
  */
 
 int main(void)
 {
-        int index = 97;
+	int index = 97;
 
 	while (index < 123)
-        {
+	{
 		if (index == 101 || index == 113)
-                {
-                        index++;
+		{
+			index++;
 			continue;
-                }
+		}
 
-                putchar(index);
-                index++;
-        }
-        putchar('\n');
+		putchar(index);
+		index++;
+	}
+	putchar('\n');
 
-        return (0);
+	return (0);
 }
