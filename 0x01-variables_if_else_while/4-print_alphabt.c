@@ -14,14 +14,14 @@ int main(void)
 
 	while (index < 123)
         {
-       	        if (index == 101 || index == 113)
+		if (index == 101 || index == 113)
                 {
-                        continue;
-                } else
-                {
+                        index++;
+			continue;
+                }
+
                 putchar(index);
                 index++;
-                }
         }
         putchar('\n');
 
