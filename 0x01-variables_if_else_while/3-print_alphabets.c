@@ -13,12 +13,12 @@ int main(void)
 	int lowerCase = 97, upperCase = 65;
 	/* z=122 Z=90 */
 
-	while(lowerCase < 123)
+	while (lowerCase < 123)
 	{
 		putchar(lowerCase);
 		lowerCase++;
 	}
-	while(upperCase < 91)
+	while (upperCase < 91)
 	{
 		putchar(upperCase);
 		upperCase++;
@@ -27,6 +27,3 @@ int main(void)
 	putchar('\n');
 	return (0);
 }
-
-
-
