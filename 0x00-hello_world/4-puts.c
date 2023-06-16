@@ -2,11 +2,10 @@
 #include <string.h>
 
 /**
- * main print using puts
+ * main - print using puts
  *
- * initializing str charachters
- *
- * handing control over to processor using zero
+ * Description: initializing str charachters then printing str[] using puts
+ * Return: 0 for success and handing control over to processor using zero
  */
 int main(void)
 {
