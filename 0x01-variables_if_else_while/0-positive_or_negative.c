@@ -5,7 +5,8 @@
 /**
  * main - asigns random number to n and evaluates it
  *
- * Description: if n is positive or negative or equal zero it will describe that in stdout
+ * Description: if n is positive or negative 
+ * or equal zero it will describe that in stdout
  * Return: returns 0 to hand over control
  */
 
