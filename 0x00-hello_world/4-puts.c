@@ -1,7 +1,13 @@
 #include <stdio.h>
 #include <string.h>
 
-/* main.c */
+/**
+ * main print using puts
+ *
+ * initializing str charachters
+ *
+ * handing control over to processor using zero
+ */
 int main(void)
 {
 	/* initializing str charachters */
