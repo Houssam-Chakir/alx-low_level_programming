@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <string.h>
 
-/* printing to standard output */
-int main(void) 
+/* main.c */
+int main(void)
 {
 	/* initializing str charachters */
 	char str[] = "\"Programming is like building a multilingual puzzle";
