@@ -9,13 +9,13 @@
 
 int main(void)
 {
-        int index1 = 0, index2 = 97;
+        int index1 = 48, index2 = 97;
 
         while (index1 < 58)
         {
                 putchar(index1);
                 index1++;
-	}
+        }
 
         while (index2 < 103)
         {
