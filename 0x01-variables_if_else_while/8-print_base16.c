@@ -9,21 +9,20 @@
 
 int main(void)
 {
-	int index = 0;
-	while (index < 58)
-	{
-		putchar(index);
-		index++;
+        int index1 = 0, index2 = 97;
+
+        while (index1 < 58)
+        {
+                putchar(index1);
+                index1++;
 	}
 
-	index = 97;
+        while (index2 < 103)
+        {
+                putchar(index2);
+                index2++;
+        }
 
-	while (index < 103)
-	{
-		putchar(index);
-		index++;
-	}
-
-	putchar('\n');
-	return (0);
+        putchar('\n');
+        return (0);
 }
