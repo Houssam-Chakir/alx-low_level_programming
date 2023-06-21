@@ -3,6 +3,7 @@
 
 /**
  * print_sign - prints the sign of a number
+ * @n: number as parameter to be chacked
  *
  * Description: printsa number sign
  * Return: Returns 1 and prints + if n is greater than zero
