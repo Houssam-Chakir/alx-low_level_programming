@@ -2,7 +2,7 @@
 #include "stdio.h"
 /**
  * rev_string - reverses a string
- * @*s: characters string
+ * @s: characters string
  *
  * Return: reversed string
  */
@@ -12,7 +12,7 @@ void rev_string(char *s)
 	int len = 0, i = 0;
 	char tempo;
 
-	 while (*(s + i++))
+	while (*(s + i++))
 	{
 		len++;
 	}
