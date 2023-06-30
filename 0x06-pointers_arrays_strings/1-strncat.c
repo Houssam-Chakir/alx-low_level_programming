@@ -2,9 +2,10 @@
 #include "main.h"
 
 /**
- * *_strcat - string concat'
+ * *_strncat - string concat'
  * @dest: first part of the string
  * @src: appended part of the string
+ * @n: number of allocated bytes
  *
  * Return: a pointer to the resulting string dest
  */
