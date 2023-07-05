@@ -3,7 +3,7 @@
 #include "main.h"
 
 /**
- * void _print_rev_recursion - prints string in rev
+ * _print_rev_recursion - prints string in rev
  * @s: string
  *
  * Return: nothing
