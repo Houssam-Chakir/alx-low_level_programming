@@ -1,7 +1,5 @@
 #!/bin/bash
 
-#!/bin/bash
-
 for file in *.c; do
     if [ -f "$file" ]; then
         filename="${file%.*}"
