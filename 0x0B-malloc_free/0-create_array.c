@@ -13,25 +13,16 @@ char *create_array(unsigned int size, char c)
 	char *array = NULL;
 	unsigned int count = 0;
 
-	if (size > 0)
-	{
-		array = malloc(size * sizeof(char));
-		while (size != count)
-		{
-			array[count] = c;
-			count++;
-		}
-	}
-	else if (size <= 0)
+	array = malloc(size * sizeof(char));
+	if (size <= 0 || array == NULL)
 	{
 		free(array);
 		return (NULL);
 	}
-
-	if (array == NULL)
+	while (size != count)
 	{
-		free(array);
-		return (NULL);
+		array[count] = c;
+		count++;
 	}
 	return (array);
 }
