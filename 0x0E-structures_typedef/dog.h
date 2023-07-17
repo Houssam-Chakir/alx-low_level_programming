@@ -17,4 +17,6 @@ struct dog
 	/* ofc u can add more */
 };
 
+void init_dog(struct dog *d, char *name, float age, char *owner);
+
 #endif
