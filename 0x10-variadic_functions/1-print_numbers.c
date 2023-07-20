@@ -1,19 +1,6 @@
 #include <stdarg.h>
 #include <stdio.h>
 #include "variadic_functions.h"
-#include <unistd.h>
-
-/**
- * _putchar - writes the character c to stdout
- * @c: The character to print
- *
- * Return: On success 1.
- * On error, -1 is returned, and errno is set appropriately.
- */
-int _putchar(char c)
-{
-	return (write(1, &c, 1));
-}
 
 /**
  * print_numbers - prints nuumbers
@@ -36,9 +23,9 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	{
 		num = va_arg(args, int);
 
-		printf("%d", num);
+		printf("%d",num);
 		if (separator != NULL && i + 1 != n)
-			printf("%c", *separator);
+			printf("%s", separator);
 		i++;
 	}
 
