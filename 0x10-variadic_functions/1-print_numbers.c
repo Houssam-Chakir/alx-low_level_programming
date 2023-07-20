@@ -23,7 +23,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	{
 		num = va_arg(args, int);
 
-		printf("%d",num);
+		printf("%d", num);
 		if (separator != NULL && i + 1 != n)
 			printf("%s", separator);
 		i++;
