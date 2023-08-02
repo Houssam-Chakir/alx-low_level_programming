@@ -12,44 +12,43 @@ size_t print_listint_safe(const listint_t *head);
  */
 size_t listint_len_checker(const listint_t *head)
 {
-	const listint_t *x, *y;
+	const listint_t *tortoise, *hare;
 	size_t nodes = 1;
 
 	if (head == NULL || head->next == NULL)
 		return (0);
 
-	x = head->next;
-	y = (head->next)->next;
+	tortoise = head->next;
+	hare = (head->next)->next;
 
-	while (y)
+	while (hare)
 	{
-		if (x == y)
+		if (tortoise == hare)
 		{
-			x = head;
-			while (x != y)
+			tortoise = head;
+			while (tortoise != hare)
 			{
-				x = x->next;
-				y = y->next;
 				nodes++;
+				tortoise = tortoise->next;
+				hare = hare->next;
 			}
 
-			x = x->next;
-			while (x != y)
+			tortoise = tortoise->next;
+			while (tortoise != hare)
 			{
-				x = x->next;
-				node++;
+				nodes++;
+				tortoise = tortoise->next;
 			}
 
 			return (nodes);
 		}
 
-		x = x->next;
-		y = (y->next)->next;
+		tortoise = tortoise->next;
+		hare = (hare->next)->next;
 	}
 
 	return (0);
 }
-
 /**
  * print_listint_safe - prints listint_t list
  * @head: pointer to head
