@@ -9,20 +9,19 @@
 size_t free_listint_safe(listint_t **h)
 {
 	size_t lenght = 0;
-	int num
-	listint_t *tempo;
+	int num;
+	listint_t *temp;
 
 	if (!h || !*h)
 		return (0);
-
 	while (*h)
 	{
 		num = *h - (*h)->next;
 		if (num > 0)
 		{
-			tempo = (*h)->next;
+			temp = (*h)->next;
 			free(*h);
-			*h = tempo;
+			*h = temp;
 			lenght++;
 		}
 		else
@@ -33,9 +32,6 @@ size_t free_listint_safe(listint_t **h)
 			break;
 		}
 	}
-
 	*h = NULL;
-
 	return (lenght);
 }
-
